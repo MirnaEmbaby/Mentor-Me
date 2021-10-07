@@ -4,7 +4,7 @@ import 'package:mentor_me/colors.dart';
 import 'package:mentor_me/screens/chats_screen.dart';
 import 'package:mentor_me/screens/contact_us_screen.dart';
 import 'package:mentor_me/screens/home_screen.dart';
-import 'package:mentor_me/screens/language_alert_screen.dart';
+import 'package:mentor_me/screens/language_bs_screen.dart';
 import 'package:mentor_me/screens/login_screen.dart';
 import 'package:mentor_me/screens/orders_screen.dart';
 import 'package:mentor_me/screens/profile_screen.dart';
@@ -56,7 +56,7 @@ class MyDrawer extends StatelessWidget {
 
   void language(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return LanguageAlert();
+      return LanguageBS();
     }));
   }
 
@@ -186,7 +186,7 @@ class MyDrawer extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                drawerItem(context, Icons.language, "اللغة", language),
+                const LanguageBS(),
                 const SizedBox(
                   height: 20,
                 ),
