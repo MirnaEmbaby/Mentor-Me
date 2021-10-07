@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/widgets/change_pass_tf.dart';
 
 class NewPassBS extends StatelessWidget {
-
+  const NewPassBS({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,6 @@ class NewPassBS extends StatelessWidget {
       ),
       onPressed: () {
         showModalBottomSheet<void>(
-
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
@@ -35,7 +34,7 @@ class NewPassBS extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children:  <Widget>[
+                  children: <Widget>[
                     const Text(
                       'تغيير كلمة المرور',
                       style: TextStyle(
@@ -45,20 +44,25 @@ class NewPassBS extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     const Text("كلمة المرور القديمة"),
-                    const SizedBox( height: 10),
-                    const NewTF("الرجاء إدخال كلمة المرور","",true,TextInputType.text),
-                    const SizedBox(height: 20), const Text("كلمة المرور الجديدة"),
-                    const SizedBox( height: 10),
-                    const NewTF("الرجاء إدخال كلمة المرور","",true,TextInputType.text),
-                    const SizedBox(height: 20), const Text("تأكيد كلمة المرور"),
-                    const SizedBox( height: 10),
-                    const NewTF("الرجاء إدخال كلمة المرور","",true,TextInputType.text),
+                    const SizedBox(height: 10),
+                    const NewTF("الرجاء إدخال كلمة المرور", "", true,
+                        TextInputType.text),
+                    const SizedBox(height: 20),
+                    const Text("كلمة المرور الجديدة"),
+                    const SizedBox(height: 10),
+                    const NewTF("الرجاء إدخال كلمة المرور", "", true,
+                        TextInputType.text),
+                    const SizedBox(height: 20),
+                    const Text("تأكيد كلمة المرور"),
+                    const SizedBox(height: 10),
+                    const NewTF("الرجاء إدخال كلمة المرور", "", true,
+                        TextInputType.text),
                     const SizedBox(height: 30),
                     SizedBox(
                       width: 400,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed: ()=>Navigator.pop(context),
+                        onPressed: () => Navigator.pop(context),
                         child: const Text(
                           "تأكيد",
                           style: TextStyle(color: Colors.white, fontSize: 16),

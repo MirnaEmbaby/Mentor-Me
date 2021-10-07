@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 
 class OrderDetails1 extends StatelessWidget {
   const OrderDetails1({Key? key}) : super(key: key);
@@ -67,17 +67,17 @@ class OrderDetails1 extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 10),
+                      margin: const EdgeInsets.symmetric(horizontal: 10),
                       height: 40,
                       child: Row(
                         children: [
                           SizedBox(
                             width: MediaQuery.of(context).size.width * 0.40,
-                            child: Text("اسم القسم"),
+                            child: const Text("اسم القسم"),
                           ),
                           SizedBox(
                             width: MediaQuery.of(context).size.width * 0.25,
-                            child: Text("ديكور"),
+                            child: const Text("ديكور"),
                           ),
                         ],
                       ),
@@ -152,18 +152,18 @@ class OrderDetails1 extends StatelessWidget {
                     ),
                     const Divider(),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 10),
+                      margin: const EdgeInsets.symmetric(horizontal: 10),
                       height: 80,
                       child: Row(
                         children: [
                           SizedBox(
                             width: MediaQuery.of(context).size.width * 0.40,
-                            child: Text("الملاحظات"),
+                            child: const Text("الملاحظات"),
                           ),
                           SizedBox(
                             width: MediaQuery.of(context).size.width * 0.4,
                             child: const Text(
-                              Lorem,
+                              lorem,
                               style: TextStyle(fontSize: 10),
                             ),
                           ),

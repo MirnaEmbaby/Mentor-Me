@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/create_account_screen.dart';
 import 'package:mentor_me/screens/forget_password_screen.dart';
 import 'package:mentor_me/screens/home_screen.dart';
@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
 
   void homePage(BuildContext ctx) {
     Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (_) {
-      return Home();
+      return const Home();
     }));
   }
 

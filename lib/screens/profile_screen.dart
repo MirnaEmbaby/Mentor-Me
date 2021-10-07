@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/newpass_bs_screen.dart';
 import 'package:mentor_me/widgets/login_tf.dart';
 
@@ -120,7 +120,7 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    NewPassBS(),
+                    const NewPassBS(),
                   ],
                 ),
               )

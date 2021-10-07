@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/drawer_screen.dart';
 import 'package:mentor_me/screens/notifications_screen.dart';
 import 'package:mentor_me/widgets/department.dart';
@@ -11,14 +11,16 @@ import 'package:mentor_me/widgets/home_grid.dart';
 import 'package:mentor_me/widgets/homepage_carousel.dart';
 
 class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
   void drawer(BuildContext ctx) {
     Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (_) {
-      return MyDrawer();
+      return const MyDrawer();
     }));
   }
   void notifications(BuildContext ctx) {
-    Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (_) {
-      return Notifications();
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return const Notifications();
     }));
   }
 
@@ -71,8 +73,8 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(20),
+                  const Padding(
+                    padding: EdgeInsets.all(20),
                     child: HomeCarousel(),
                   ),
                 ],

@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/request_alert_screen.dart';
 import 'package:mentor_me/widgets/login_tf.dart';
 
 class RegisInfo extends StatelessWidget {
-
-
+  const RegisInfo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
-
-
     return Directionality(
       textDirection: TextDirection.rtl,
-      child:  Scaffold(
+      child: Scaffold(
         appBar: AppBar(
           backgroundColor: b,
           elevation: 0,
@@ -25,7 +21,6 @@ class RegisInfo extends StatelessWidget {
               fontSize: 26,
             ),
           ),
-
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -46,21 +41,29 @@ class RegisInfo extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
-
-                  children:  [
-                    const LoginTF("جاستن بيبر", "اسم المستفيد", false,TextInputType.text),
+                  children: [
+                    const LoginTF("جاستن بيبر", "اسم المستفيد", false,
+                        TextInputType.text),
                     const SizedBox(
                       height: 20,
-                    ),const LoginTF("تاريخ الاستشارة", "", false,TextInputType.datetime),
+                    ),
+                    const LoginTF(
+                        "تاريخ الاستشارة", "", false, TextInputType.datetime),
                     const SizedBox(
                       height: 20,
-                    ),const LoginTF("وقت الاستشارة", "", false,TextInputType.datetime),
+                    ),
+                    const LoginTF(
+                        "وقت الاستشارة", "", false, TextInputType.datetime),
                     const SizedBox(
                       height: 20,
-                    ),const LoginTF("مدة الاستشارة", "", false,TextInputType.number),
+                    ),
+                    const LoginTF(
+                        "مدة الاستشارة", "", false, TextInputType.number),
                     const SizedBox(
                       height: 20,
-                    ),const LoginTF("الملاحظات", "", false,TextInputType.multiline),
+                    ),
+                    const LoginTF(
+                        "الملاحظات", "", false, TextInputType.multiline),
                     const SizedBox(
                       height: 180,
                     ),
@@ -68,10 +71,10 @@ class RegisInfo extends StatelessWidget {
                       width: 400,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed:()=> {showDialog(
-                            context: context,
-                            builder: (_) => RequestAlert()
-                        )},
+                        onPressed: () => {
+                          showDialog(
+                              context: context, builder: (_) => const RequestAlert())
+                        },
                         child: const Text(
                           "إرسال",
                           style: TextStyle(color: Colors.white, fontSize: 16),

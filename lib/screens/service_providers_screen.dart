@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/widgets/spg_item.dart';
 
 class ServiceProvider extends StatelessWidget {
+  const ServiceProvider({Key? key}) : super(key: key);
+
 
 
 

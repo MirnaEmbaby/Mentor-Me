@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/service_providers_screen.dart';
 
 class Article extends StatelessWidget {
@@ -7,7 +7,7 @@ class Article extends StatelessWidget {
 
   void serviceproviders(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return ServiceProvider();
+      return const ServiceProvider();
     }));
   }
 
@@ -45,35 +45,35 @@ class Article extends StatelessWidget {
                 child: Column(
                   children: [
                     const Text(
-                      Lorem,
+                      lorem,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     const Text(
-                      Lorem,
+                      lorem,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     const Text(
-                      Lorem,
+                      lorem,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     const Text(
-                      Lorem,
+                      lorem,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     const Text(
-                      Lorem,
+                      lorem,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(

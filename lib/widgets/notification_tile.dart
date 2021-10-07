@@ -1,24 +1,15 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mentor_me/assets_file.dart';
-import 'package:mentor_me/screens/order_details1_screen.dart';
-import 'package:mentor_me/screens/order_details2_screen.dart';
-import 'package:mentor_me/screens/order_details3_screen.dart';
+import 'package:mentor_me/screens/payment_screen.dart';
 
-class TabBarItem extends StatelessWidget {
-  final int i;
+class NotificationTile extends StatelessWidget {
+  const NotificationTile({Key? key}) : super(key: key);
 
-  const TabBarItem(this.i, {Key? key}) : super(key: key);
-
-  void orderdetails(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return i == 1
-              ? const OrderDetails1()
-              : (i == 2 ? const OrderDetails2() : const OrderDetails3());
-        },
-      ),
-    );
+  void payment(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return const Payment();
+    }));
   }
 
   @override
@@ -26,20 +17,12 @@ class TabBarItem extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: InkWell(
-        onTap: () => orderdetails(context),
+        onTap: () => payment(context),
         child: Container(
-          margin: const EdgeInsets.symmetric(vertical: 10),
           height: 80,
           width: double.maxFinite,
-          padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(
-              Radius.circular(10),
-            ),
-            border: Border.all(
-              color: Colors.black12,
-            ),
-          ),
+          padding: const EdgeInsets.fromLTRB(10, 10, 30, 10),
+          margin: const EdgeInsets.symmetric(vertical: 5),
           child: Row(
             children: [
               ClipRRect(
@@ -47,10 +30,10 @@ class TabBarItem extends StatelessWidget {
                   Radius.circular(10),
                 ),
                 child: Image.asset(
-                  image1,
+                  profileImage,
                   fit: BoxFit.fill,
-                  height: 60,
-                  width: 60,
+                  height: 50,
+                  width: 50,
                 ),
               ),
               Padding(
@@ -58,41 +41,43 @@ class TabBarItem extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
+                    SizedBox(
+                      height: 12,
+                    ),
                     Text(
-                      "اسم مقدم الخدمة",
+                      "جاستن بيبر",
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     SizedBox(
-                      height: 8,
+                      height: 4,
                     ),
                     Text(
-                      "اسم القسم",
+                      "هذا النص هو مثال لنص يمكن أن يستبدل",
                       style: TextStyle(
-                        fontSize: 10,
-                        color: Colors.red,
+                        fontSize: 8,
                       ),
                     ),
                   ],
                 ),
               ),
               const SizedBox(
-                width: 70,
+                width: 40,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: const [
-                    Text(
-                      "رقم الطلب",
-                      style: TextStyle(
-                        fontSize: 12,
-                      ),
+                    Icon(
+                      Icons.delete,
+                      color: Colors.red,
                     ),
                     Text(
-                      "1234",
+                      "PM \t 3:26",
                       style: TextStyle(
                         fontSize: 12,
                       ),

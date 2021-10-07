@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 
 class Terms extends StatelessWidget {
   const Terms({Key? key}) : super(key: key);
@@ -36,9 +36,9 @@ class Terms extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               child: Column(
                 children: const [
-                  Text(Lorem,textAlign: TextAlign.center,),
-                  SizedBox(height: 10,),Text(Lorem,textAlign: TextAlign.center,),
-                  SizedBox(height: 10,),Text(Lorem,textAlign: TextAlign.center,),
+                  Text(lorem,textAlign: TextAlign.center,),
+                  SizedBox(height: 10,),Text(lorem,textAlign: TextAlign.center,),
+                  SizedBox(height: 10,),Text(lorem,textAlign: TextAlign.center,),
 
                 ],
               ),

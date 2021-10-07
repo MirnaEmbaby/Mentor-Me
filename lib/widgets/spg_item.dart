@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/provider_screen.dart';
 
 class SGItem extends StatelessWidget {
   final String t;
   final Color c;
 
-  const SGItem(this.t, this.c);
+  const SGItem(this.t, this.c, {Key? key}) : super(key: key);
 
   void provider(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return  Provider();
+      return const Provider();
     }));
   }
 

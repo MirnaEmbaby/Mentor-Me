@@ -1,14 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/registeration_info_screen.dart';
 
 class Provider extends StatelessWidget {
+  const Provider({Key? key}) : super(key: key);
 
   void regisInfo(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return  RegisInfo();
+      return const RegisInfo();
     }));
   }
 
@@ -118,38 +119,38 @@ class Provider extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
+                      child: const Text(
                         "الوصف",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
-                        Lorem,
+                      child: const Text(
+                        lorem,
                         style: TextStyle(fontSize: 10),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
+                      child: const Text(
                         "الخبرات",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Icon(
                           Icons.circle,
                           color: b,
@@ -166,11 +167,11 @@ class Provider extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Icon(
                           Icons.circle,
                           color: b,
@@ -187,11 +188,11 @@ class Provider extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Icon(
                           Icons.circle,
                           color: b,
@@ -208,11 +209,11 @@ class Provider extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
-                      children: [
+                      children: const [
                         Icon(
                           Icons.circle,
                           color: b,
@@ -229,42 +230,52 @@ class Provider extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
+                      child: const Text(
                         "سعر الاستشارة ( الساعة )",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
+                      child: const Text(
                         "50 ريال",
                         style: TextStyle(fontSize: 12),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
+                      child: const Text(
                         "الجنس",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       alignment: Alignment.topRight,
-                      child: Text(
+                      child: const Text(
                         "ذكر",
                         style: TextStyle(fontSize: 12),
                       ),
                     ),
-                    SizedBox(height: 100,),
+                    const SizedBox(
+                      height: 100,
+                    ),
                     SizedBox(
                       width: 400,
                       height: 50,
@@ -282,7 +293,9 @@ class Provider extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 50,),
+                    const SizedBox(
+                      height: 50,
+                    ),
                   ],
                 ),
               ),

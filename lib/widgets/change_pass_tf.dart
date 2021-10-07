@@ -6,7 +6,7 @@ class NewTF extends StatelessWidget {
   final bool insertIcon;
   final TextInputType tit;
 
-  const NewTF(this.ht, this.lt, this.insertIcon, this.tit);
+   const NewTF(this.ht, this.lt, this.insertIcon, this.tit, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

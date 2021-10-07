@@ -5,7 +5,7 @@ class TabBarPage extends StatelessWidget {
 
   final int i;
 
-  const TabBarPage(this.i);
+   const TabBarPage(this.i, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

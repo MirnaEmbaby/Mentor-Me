@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mentor_me/colors.dart';
+import 'package:mentor_me/assets_file.dart';
 import 'package:mentor_me/screens/home_screen.dart';
 import 'package:mentor_me/widgets/passcode_block.dart';
 
@@ -8,7 +8,7 @@ class Activation extends StatelessWidget {
 
   void homePage(BuildContext ctx) {
     Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (_) {
-      return Home();
+      return const Home();
     }));
   }
 
