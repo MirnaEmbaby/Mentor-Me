@@ -5,9 +5,6 @@ import 'package:mentor_me/widgets/spg_item.dart';
 class ServiceProvider extends StatelessWidget {
   const ServiceProvider({Key? key}) : super(key: key);
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Directionality(
